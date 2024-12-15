@@ -150,6 +150,7 @@ const (
 // +kubebuilder:printcolumn:name="RUNNINGS",type=integer,JSONPath=`.status.running`
 // +kubebuilder:printcolumn:name="AGE",type=date,JSONPath=`.metadata.creationTimestamp`
 // +kubebuilder:printcolumn:name="QUEUE",type=string,priority=1,JSONPath=`.spec.queue`
+// +kubebuilder:printcolumn:name="PARENT",type=string,JSONPath=`.spec.parent`
 
 // PodGroup is a collection of Pod; used for batch workload.
 type PodGroup struct {
