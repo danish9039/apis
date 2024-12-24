@@ -150,7 +150,6 @@ const (
 // +kubebuilder:printcolumn:name="RUNNINGS",type=integer,JSONPath=`.status.running`
 // +kubebuilder:printcolumn:name="AGE",type=date,JSONPath=`.metadata.creationTimestamp`
 // +kubebuilder:printcolumn:name="QUEUE",type=string,priority=1,JSONPath=`.spec.queue`
-
 // PodGroup is a collection of Pod; used for batch workload.
 type PodGroup struct {
 	metav1.TypeMeta `json:",inline"`
@@ -249,7 +248,7 @@ const (
 // +kubebuilder:object:root=true
 // +kubebuilder:resource:path=queues,scope=Cluster,shortName=q;queue-v1beta1
 // +kubebuilder:subresource:status
-
+// +kubebuilder:printcolumn:name="Parent",type=string,JSONPath=`.spec.parent`,description="Parent queue name"
 // Queue is a queue of PodGroup.
 type Queue struct {
 	metav1.TypeMeta `json:",inline"`
