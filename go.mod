@@ -3,11 +3,11 @@ module volcano.sh/apis
 go 1.22.0
 
 require (
-	k8s.io/api v0.31.3
-	k8s.io/apimachinery v0.31.3
-	k8s.io/apiserver v0.31.3
-	k8s.io/client-go v0.31.3
-	k8s.io/code-generator v0.31.3
+	k8s.io/api v0.32.0
+	k8s.io/apimachinery v0.32.0
+	k8s.io/apiserver v0.32.0
+	k8s.io/client-go v0.32.0
+	k8s.io/code-generator v0.32.0
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kube-openapi v0.0.0-20240228011516-70dd3763d340
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1
@@ -65,8 +65,8 @@ require (
 )
 
 replace (
-	k8s.io/api => k8s.io/api v0.31.3
-	k8s.io/apimachinery => k8s.io/apimachinery v0.31.3
-	k8s.io/apiserver => k8s.io/apiserver v0.31.3
-	k8s.io/client-go => k8s.io/client-go v0.31.3
+	k8s.io/api => k8s.io/api v0.32.0
+	k8s.io/apimachinery => k8s.io/apimachinery v0.32.0
+	k8s.io/apiserver => k8s.io/apiserver v0.32.0
+	k8s.io/client-go => k8s.io/client-go v0.32.0
 )
